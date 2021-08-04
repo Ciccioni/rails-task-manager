@@ -1,0 +1,20 @@
+<%= link_to edit_task_path(@tasks.id), class: '' do %>
+  <i class=""></i> Edit this task
+<% end %>
+
+
+<h2><%= @tasks.title %> </h2>
+<p><%= @tasks.details %>/<p>
+
+<% if @tasks.completed %>
+  <i class=""></i> This task is completed
+<% else %>
+  <i class=""></i> This task is not completed yet
+<% end %>
+
+
+
+<hr>
+<%= link_to tasks_path do %>
+  <i></i> Back to list
+<% end %>
